@@ -76,7 +76,7 @@ public class DeveloperServiceImpl implements IDeveloperService{
                 .findAll()
                 .stream()
                 .filter((d) -> {
-                    return d.getStatus().equals(Status.ACTIVE)
+                    return d.getStatus().equals(Status.ACTIVE);
                 })
                 .collect(Collectors.toList());
     }
